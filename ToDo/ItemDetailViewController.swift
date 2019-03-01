@@ -38,6 +38,15 @@ class ItemDetailViewController: UITableViewController,UITextFieldDelegate{
         dueDate = datePicker.date
         updateDueDateLabel()
     }
+    func hideDatePicker() {
+        if datePickerVisible {
+            datePickerVisible = false
+            let indexPathDatePicker = IndexPath(row: 2, section: 1)
+            tableView.deleteRows(at: [indexPathDatePicker], with: .fade)
+            dueDateLabel.textColor = UIColor.black
+        }
+    }
+    
     override func tableView(_ tableView: UITableView,
                                cellForRowAt indexPath: IndexPath)
         -> UITableViewCell {
@@ -69,9 +78,17 @@ class ItemDetailViewController: UITableViewController,UITextFieldDelegate{
         tableView.deselectRow(at: indexPath, animated: true)
         textField.resignFirstResponder()
         if indexPath.section == 1 && indexPath.row == 1 {
-            showDatePicker()
+            if !datePickerVisible {
+                showDatePicker()
+            } else {
+                hideDatePicker()
+            }
         }
     }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        hideDatePicker()
+    }
+    
     override func tableView(_ tableView: UITableView,
                                indentationLevelForRowAt indexPath: IndexPath) -> Int {
         var newIndexPath = indexPath
