@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0219DA02222909BB00D8D96D /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219DA01222909BB00D8D96D /* ItemDetailViewController.swift */; };
+		0232A7FA2229BAB0003F27BA /* ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 0232A7F92229BAB0003F27BA /* ico.png */; };
 		02337DC02226EA8E00FC46E5 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02337DBF2226EA8E00FC46E5 /* ChecklistItem.swift */; };
 		026565452224C0570045F682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026565442224C0570045F682 /* AppDelegate.swift */; };
 		026565472224C0570045F682 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026565462224C0570045F682 /* ChecklistViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0219DA01222909BB00D8D96D /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		0232A7F92229BAB0003F27BA /* ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico.png; sourceTree = "<group>"; };
 		02337DBF2226EA8E00FC46E5 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		026565412224C0570045F682 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026565442224C0570045F682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		026565432224C0570045F682 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				0232A7F92229BAB0003F27BA /* ico.png */,
 				026565442224C0570045F682 /* AppDelegate.swift */,
 				026565462224C0570045F682 /* ChecklistViewController.swift */,
 				02337DBF2226EA8E00FC46E5 /* ChecklistItem.swift */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0232A7FA2229BAB0003F27BA /* ico.png in Resources */,
 				026565522224C0590045F682 /* LaunchScreen.storyboard in Resources */,
 				0265654F2224C0590045F682 /* Assets.xcassets in Resources */,
 				0265654A2224C0570045F682 /* Main.storyboard in Resources */,
